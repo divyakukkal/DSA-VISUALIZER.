@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>DSA Visualizer — watch algorithms think</title>
+<meta name="description" content="An interactive visualizer for core data structures and algorithms — sorting, searching, stacks, queues, linked lists and graph traversal." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="app">
+
+  <!-- ============ SIDEBAR ============ -->
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="brand-mark">&lt;/&gt;</span>
+      <div class="brand-text">
+        <h1>dsa<span>.visualizer</span></h1>
+        <p>learn it by watching it run</p>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+    </div>
+
+    <nav class="nav" id="nav">
+      <div class="nav-group">
+        <p class="nav-label"><span>01</span> Sorting</p>
+        <button class="nav-item active" data-algo="bubble">Bubble Sort</button>
+        <button class="nav-item" data-algo="selection">Selection Sort</button>
+        <button class="nav-item" data-algo="insertion">Insertion Sort</button>
+        <button class="nav-item" data-algo="merge">Merge Sort</button>
+        <button class="nav-item" data-algo="quick">Quick Sort</button>
+      </div>
+
+      <div class="nav-group">
+        <p class="nav-label"><span>02</span> Searching</p>
+        <button class="nav-item" data-algo="linear">Linear Search</button>
+        <button class="nav-item" data-algo="binary">Binary Search</button>
+      </div>
+
+      <div class="nav-group">
+        <p class="nav-label"><span>03</span> Data Structures</p>
+        <button class="nav-item" data-algo="stack">Stack</button>
+        <button class="nav-item" data-algo="queue">Queue</button>
+        <button class="nav-item" data-algo="linkedlist">Linked List</button>
+      </div>
+
+      <div class="nav-group">
+        <p class="nav-label"><span>04</span> Graph Traversal</p>
+        <button class="nav-item" data-algo="bfs">BFS — Maze</button>
+        <button class="nav-item" data-algo="dfs">DFS — Maze</button>
+      </div>
+
+      <div class="nav-group">
+        <p class="nav-label"><span>05</span> Trees &amp; Heaps</p>
+        <button class="nav-item" data-algo="bst">Binary Search Tree</button>
+        <button class="nav-item" data-algo="heap">Min-Heap</button>
+      </div>
+
+      <div class="nav-group">
+        <p class="nav-label"><span>06</span> Extras</p>
+        <!-- replace this href with the path to your existing Huffman Coding page/repo -->
+        <a class="nav-item nav-link" href="huffman.html">Huffman Coding <span class="ext">↗</span></a>
+      </div>
+    </nav>
+
+    <footer class="sidebar-footer">
+      <p>fork it, star it, teach with it</p>
+    </footer>
+  </aside>
+
+  <!-- ============ MAIN STAGE ============ -->
+  <main class="stage-wrap">
+
+    <header class="topbar">
+      <div class="tab">
+        <span class="tab-dots"><i></i><i></i><i></i></span>
+        <span id="algoTitle">bubble_sort.js</span>
+      </div>
+      <p id="algoDesc" class="algo-desc">Loading…</p>
+    </header>
+
+    <section class="stage" id="stage" aria-live="polite"></section>
+
+    <footer class="controls" id="controls"></footer>
+
+    <section class="complexity" id="complexity"></section>
+
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
