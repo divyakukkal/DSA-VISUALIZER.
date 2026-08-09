@@ -47,8 +47,8 @@ Pure **HTML, CSS, and vanilla JavaScript** — no frameworks, no build step, no 
 ## Run it locally
 
 ```bash
-git clone https://github.com/divyakukkal/DSA-VISUALIZER.git
-cd DSA-VISUALIZER
+git clone https://github.com/divyakukkal/DSA-VISUALIZER..git
+cd DSA-VISUALIZER.
 ```
 
 Then just open `index.html` in your browser — or, if you want live-reload while editing, serve it with any static server, e.g.:
