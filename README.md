@@ -4,7 +4,7 @@ Interactive visualizer for core DSA concepts — sorting, searching, stacks, que
 
 An interactive, in-browser visualizer for core data structures and algorithms — built so you can *watch* how they work instead of just reading pseudocode. Made for juniors who are new to DSA and want to see it run step by step.
 
-**Live demo:** [divyakukkal.github.io/DSA-VISUALIZER](https://divyakukkal.github.io/DSA-VISUALIZER/)
+**Live demo:** [divyakukkal.github.io/DSA-VISUALIZER.](https://divyakukkal.github.io/DSA-VISUALIZER./)
 
 ---
 
